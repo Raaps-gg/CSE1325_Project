@@ -1,3 +1,5 @@
-B001,Test Book,Test Author,true
-B002,OOP Concepts,James Gosling,true
-B003,Effective Java,Joshua Bloch,false
+// 4 digit unique book number, "Book Title", Author, year published, true or false whether book is in inventory. //
+
+B0001,Test Book,Test Author,0000,true
+B0002,OOP Concepts,James Gosling,2014,true
+B0003,Effective Java,Joshua Bloch,2019,false
