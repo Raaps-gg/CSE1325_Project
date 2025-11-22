@@ -1,0 +1,55 @@
+// 4 digit unique book number, "Book Title", Author, year published, true or false whether book is in inventory. //
+
+B0001,Test Book,Test Author,0000,true
+B0002,OOP Concepts,James Gosling,2014,true
+B0003,Effective Java,Joshua Bloch,2019,false
+B0004,The Structure of Scientific Revolutions,Thomas S. Kuhn,1996,true
+B0005,The Elements of Style,William Strunk Jr.,2000,true
+B0006,A Brief History of Time,Stephen Hawking,1988,true
+B0007,Sapiens: A Brief History of Humankind,Yuval Noah Harari,2015,true
+B0008,The Republic,Plato,-375,true
+B0009,The Communist Manifesto,Karl Marx & Friedrich Engels,1848,true
+B0010,The Wealth of Nations,Adam Smith,1776,true
+B0011,On the Origin of Species,Charles Darwin,1859,true
+B0012,The Federalist Papers,Hamilton, Madison, & Jay,1788,true
+B0013,Understanding Research Methods,John W. Creswell,2018,true
+B0014,Introduction to Algorithms,Cormen, Leiserson, et al.,2022,true
+B0015,Linear Algebra and Its Applications,David C. Lay,2020,true
+B0016,Principles of Economics,N. Gregory Mankiw,2021,true
+B0017,The Art of Computer Programming, Vol 1,Donald E. Knuth,1997,true
+B0018,Operating System Concepts,Silberschatz, Galvin, & Gagne,2018,true
+B0019,Thermodynamics: An Engineering Approach,Cengel & Boles,2019,true
+B0020,Fundamentals of Fluid Mechanics,Munson, Young, & Okiishi,2021,true
+B0021,Design of Reinforced Concrete,Jack C. McCormac,2022,true
+B0022,Digital Design,M. Morris Mano,2019,true
+B0023,Electric Circuits,James W. Nilsson,2020,true
+B0024,Organic Chemistry,Paula Yurkanis Bruice,2016,true
+B0025,Principles of General Chemistry,Martin S. Silberberg,2017,true
+B0026,Calculus: Early Transcendentals,James Stewart,2023,true
+B0027,Probability and Statistical Inference,Robert V. Hogg,2019,true
+B0028,Psychology,David G. Myers,2022,true
+B0029,The 7 Habits of Highly Effective People,Stephen R. Covey,2020,true
+B0030,Writing for Social Scientists,Howard S. Becker,2007,true
+B0031,Doing Qualitative Research,Benjamin F. Crabtree,2020,true
+B0032,Principles of Polymer Engineering,N.G. McCrum,2010,true
+B0033,Essentials of Geology,Frederick K. Lutgens,2021,true
+B0034,Introduction to Robotics,John J. Craig,2018,true
+B0035,Signals and Systems,Alan V. Oppenheim,1996,true
+B0036,The Interpretation of Cultures,Clifford Geertz,1993,true
+B0037,A People's History of the United States,Howard Zinn,2003,true
+B0038,The Cambridge Handbook of English Linguistics,Bas Aarts,2018,true
+B0039,Modern Philosophy: An Introduction and Survey,Roger Scruton,2012,true
+B0040,Biochemistry,Jeremy M. Berg,2015,true
+B0041,The Selfish Gene,Richard Dawkins,2016,true
+B0042,Essentials of Medical Microbiology,Patrick R. Murray,2020,true
+B0043,C++ Primer,Stanley B. Lippman,2013,true
+B0044,Computer Networking: A Top-Down Approach,Kurose & Ross,2021,true
+B0045,Discrete Mathematics and Its Applications,Kenneth H. Rosen,2018,true
+B0046,Project Management: A Managerial Approach,Meredith & Mantel,2020,true
+B0047,Introduction to Financial Accounting,Charles T. Horngren,2017,true
+B0048,Marketing Management,Philip Kotler,2021,true
+B0049,Introduction to Machine Learning,Ethem Alpaydin,2020,true
+B0050,Artificial Intelligence: A Modern Approach,Russell & Norvig,2021,true
+B0051,Digital Image Processing,Rafael C. Gonzalez,2018,true
+B0052,Communication Theories in Action,Julia T. Wood,2019,true
+B0053,The Literature Review: Six Steps to Success,Lawrence A. Machi,2012,true
