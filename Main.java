@@ -1,9 +1,4 @@
 import java.util.Scanner;
-import java.io.FileWriter;
-import java.io.FileReader;
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,37 +7,43 @@ public class Main {
         
         System.out.println("=== Library Management System ===");
         
-        while (true) {
-            System.out.println("\n1. Login as Student");
-            System.out.println("2. Login as Admin");
-            System.out.println("3. Sign up as Student");
-            System.out.println("4. Sign up as Admin");
-            System.out.println("5. Exit");
-            System.out.print("Choose option: ");
-            
-            int choice = input.nextInt();
+       while (true) {
+    System.out.println("\n1. Login as Student");
+    System.out.println("2. Login as Admin");
+    System.out.println("3. Sign up as Student");
+    System.out.println("4. Sign up as Admin");
+    System.out.println("5. Exit");
+    System.out.print("Choose option: ");
+
+        if (!input.hasNextInt()) {
+            System.out.println("Invalid input. Please enter an option from 1 to 5.");
             input.nextLine();
-            
-            switch (choice) {
-                case 1:
-                    loginStudent(library, input);
-                    break;
-                case 2:
-                    loginAdmin(library, input);
-                    break;
-                case 3:
-                    signupStudent(input);
-                    break;
-                case 4:
-                    signupAdmin(input);
-                    break;
-                case 5:
-                    System.out.println("Thank you for using the Library Management System!");
-                    input.close();
-                    return;
-                default:
-                    System.out.println("Invalid choice. Please try again.");
-            }
+            continue;
+        }
+
+        int choice = input.nextInt();
+        input.nextLine();
+
+        switch (choice) {
+            case 1:
+                loginStudent(library, input);
+                break;
+            case 2:
+                loginAdmin(library, input);
+                break;
+            case 3:
+                signupStudent(input);
+                break;
+            case 4:
+                signupAdmin(input);
+                break;
+            case 5:
+                System.out.println("Thank you for using the Library Management System!");
+                input.close();
+                return;
+            default:
+                System.out.println("Invalid choice. Please try again.");
+            }     
         }
     }
     
@@ -62,19 +63,33 @@ public class Main {
     }
     
     private static void loginAdmin(Library library, Scanner input) {
+    String id;
+
+    while (true) {
         System.out.print("Enter admin ID: ");
-        String id = input.nextLine();
-        System.out.print("Enter admin password: ");
-        String password = input.nextLine();
-        
-        if (FileUtils.verifyAdmin(id, password)) {
-            String name = FileUtils.getAdminName(id);
-            Admin admin = new Admin(id, name);
-            admin.displayMenu(library, input);
+        id = input.nextLine().trim();
+
+        if (id.isEmpty()) {
+            System.out.println("ID cannot be empty. Try again.");
+        } else if (!id.matches("\\d+")) {
+            System.out.println("Invalid ID. Please enter numbers only.");
         } else {
-            System.out.println("Invalid admin credentials!");
+            break;
         }
     }
+
+    System.out.print("Enter admin password: ");
+    String password = input.nextLine();
+
+    if (FileUtils.verifyAdmin(id, password)) {
+        String name = FileUtils.getAdminName(id);
+        Admin admin = new Admin(id, name);
+        admin.displayMenu(library, input);
+    } else {
+        System.out.println("Invalid admin credentials!");
+    }
+}
+
     
     private static void signupStudent(Scanner input) {
         System.out.println("\n=== Student Sign Up ===");

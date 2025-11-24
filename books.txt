@@ -36,7 +36,7 @@ B0034,Introduction to Robotics,John J. Craig,2018,true
 B0035,Signals and Systems,Alan V. Oppenheim,1996,true
 B0036,The Interpretation of Cultures,Clifford Geertz,1993,true
 B0037,A People's History of the United States,Howard Zinn,2003,true
-B0038,The Cambridge Handbook of English Linguistics,Bas Aarts,2018,false
+B0038,The Cambridge Handbook of English Linguistics,Bas Aarts,2018,true
 B0039,Modern Philosophy: An Introduction and Survey,Roger Scruton,2012,true
 B0040,Biochemistry,Jeremy M. Berg,2015,true
 B0041,The Selfish Gene,Richard Dawkins,2016,true
